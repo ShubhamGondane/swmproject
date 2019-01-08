@@ -1,0 +1,722 @@
+
+        <html>
+            <body><style type="text/css">
+h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  margin: 50px;
+}
+
+
+/* follow me template */
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #F50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}</style>
+<script>
+// '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+$(window).on("load resize ", function() {
+  var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+  $('.tbl-header').css({'padding-right':scrollWidth});
+}).resize();
+</script>
+            <section>
+                           <h1>Analysis of Related topics obained by</h1>
+                           <h1>Market Basket Analysis</h1>
+                           <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th>Topic</th>
+          <th>#Positive</th>
+          <th>#Negative</th>
+          <th>#Neutral</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+                           <div class="tbl-content">
+                <table cellpadding="0" cellspacing="0" border="0">
+                     <tr>
+                          <td>job</td>
+                          <td>97</td>
+                          <td>49</td>
+                          <td>54</td>
+                     </tr>
+                     <tr>
+                          <td>time</td>
+                          <td>54</td>
+                          <td>27</td>
+                          <td>32</td>
+                     </tr>
+                     <tr>
+                          <td>careerarc</td>
+                          <td>53</td>
+                          <td>24</td>
+                          <td>29</td>
+                     </tr>
+                     <tr>
+                          <td>phoenix</td>
+                          <td>39</td>
+                          <td>25</td>
+                          <td>26</td>
+                     </tr>
+                     <tr>
+                          <td>game</td>
+                          <td>41</td>
+                          <td>17</td>
+                          <td>19</td>
+                     </tr>
+                     <tr>
+                          <td>day</td>
+                          <td>27</td>
+                          <td>29</td>
+                          <td>20</td>
+                     </tr>
+                     <tr>
+                          <td>people</td>
+                          <td>22</td>
+                          <td>15</td>
+                          <td>18</td>
+                     </tr>
+                     <tr>
+                          <td>work</td>
+                          <td>31</td>
+                          <td>11</td>
+                          <td>11</td>
+                     </tr>
+                     <tr>
+                          <td>today</td>
+                          <td>29</td>
+                          <td>8</td>
+                          <td>14</td>
+                     </tr>
+                     <tr>
+                          <td>cardinals</td>
+                          <td>21</td>
+                          <td>8</td>
+                          <td>12</td>
+                     </tr>
+                     <tr>
+                          <td>year</td>
+                          <td>21</td>
+                          <td>9</td>
+                          <td>8</td>
+                     </tr>
+                     <tr>
+                          <td>team</td>
+                          <td>22</td>
+                          <td>7</td>
+                          <td>9</td>
+                     </tr>
+                     <tr>
+                          <td>lol</td>
+                          <td>16</td>
+                          <td>7</td>
+                          <td>14</td>
+                     </tr>
+                     <tr>
+                          <td>hiring</td>
+                          <td>17</td>
+                          <td>7</td>
+                          <td>12</td>
+                     </tr>
+                     <tr>
+                          <td>love</td>
+                          <td>17</td>
+                          <td>10</td>
+                          <td>7</td>
+                     </tr>
+                     <tr>
+                          <td>life</td>
+                          <td>18</td>
+                          <td>6</td>
+                          <td>8</td>
+                     </tr>
+                     <tr>
+                          <td>season</td>
+                          <td>10</td>
+                          <td>10</td>
+                          <td>10</td>
+                     </tr>
+                     <tr>
+                          <td>arizona</td>
+                          <td>12</td>
+                          <td>7</td>
+                          <td>9</td>
+                     </tr>
+                     <tr>
+                          <td>click</td>
+                          <td>15</td>
+                          <td>3</td>
+                          <td>10</td>
+                     </tr>
+                     <tr>
+                          <td>night</td>
+                          <td>14</td>
+                          <td>5</td>
+                          <td>9</td>
+                     </tr>
+                     <tr>
+                          <td>jobs</td>
+                          <td>9</td>
+                          <td>8</td>
+                          <td>11</td>
+                     </tr>
+                     <tr>
+                          <td>azcardinals</td>
+                          <td>8</td>
+                          <td>9</td>
+                          <td>10</td>
+                     </tr>
+                     <tr>
+                          <td>realdonaldtrump</td>
+                          <td>10</td>
+                          <td>7</td>
+                          <td>9</td>
+                     </tr>
+                     <tr>
+                          <td>birthday</td>
+                          <td>14</td>
+                          <td>7</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>play</td>
+                          <td>10</td>
+                          <td>7</td>
+                          <td>8</td>
+                     </tr>
+                     <tr>
+                          <td>imaz</td>
+                          <td>12</td>
+                          <td>4</td>
+                          <td>8</td>
+                     </tr>
+                     <tr>
+                          <td>azvshou</td>
+                          <td>9</td>
+                          <td>6</td>
+                          <td>9</td>
+                     </tr>
+                     <tr>
+                          <td>man</td>
+                          <td>11</td>
+                          <td>8</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>gabbert</td>
+                          <td>7</td>
+                          <td>3</td>
+                          <td>12</td>
+                     </tr>
+                     <tr>
+                          <td>apply</td>
+                          <td>5</td>
+                          <td>8</td>
+                          <td>10</td>
+                     </tr>
+                     <tr>
+                          <td>week</td>
+                          <td>10</td>
+                          <td>7</td>
+                          <td>5</td>
+                     </tr>
+                     <tr>
+                          <td>pace</td>
+                          <td>9</td>
+                          <td>4</td>
+                          <td>8</td>
+                     </tr>
+                     <tr>
+                          <td>miles/hr</td>
+                          <td>9</td>
+                          <td>4</td>
+                          <td>8</td>
+                     </tr>
+                     <tr>
+                          <td>ball</td>
+                          <td>9</td>
+                          <td>6</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>giants</td>
+                          <td>13</td>
+                          <td>3</td>
+                          <td>5</td>
+                     </tr>
+                     <tr>
+                          <td>years</td>
+                          <td>11</td>
+                          <td>4</td>
+                          <td>5</td>
+                     </tr>
+                     <tr>
+                          <td>phx</td>
+                          <td>6</td>
+                          <td>7</td>
+                          <td>6</td>
+                     </tr>
+                     <tr>
+                          <td>fun</td>
+                          <td>7</td>
+                          <td>5</td>
+                          <td>8</td>
+                     </tr>
+                     <tr>
+                          <td>defense</td>
+                          <td>10</td>
+                          <td>2</td>
+                          <td>8</td>
+                     </tr>
+                     <tr>
+                          <td>family</td>
+                          <td>8</td>
+                          <td>5</td>
+                          <td>6</td>
+                     </tr>
+                     <tr>
+                          <td>home</td>
+                          <td>8</td>
+                          <td>4</td>
+                          <td>7</td>
+                     </tr>
+                     <tr>
+                          <td>asu</td>
+                          <td>8</td>
+                          <td>2</td>
+                          <td>9</td>
+                     </tr>
+                     <tr>
+                          <td>lmao</td>
+                          <td>7</td>
+                          <td>5</td>
+                          <td>7</td>
+                     </tr>
+                     <tr>
+                          <td>trump</td>
+                          <td>7</td>
+                          <td>4</td>
+                          <td>7</td>
+                     </tr>
+                     <tr>
+                          <td>guy</td>
+                          <td>11</td>
+                          <td>1</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>youre</td>
+                          <td>6</td>
+                          <td>4</td>
+                          <td>7</td>
+                     </tr>
+                     <tr>
+                          <td>sunday</td>
+                          <td>11</td>
+                          <td>3</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>cards</td>
+                          <td>7</td>
+                          <td>5</td>
+                          <td>5</td>
+                     </tr>
+                     <tr>
+                          <td>fuck</td>
+                          <td>7</td>
+                          <td>6</td>
+                          <td>5</td>
+                     </tr>
+                     <tr>
+                          <td>intermat</td>
+                          <td>5</td>
+                          <td>5</td>
+                          <td>7</td>
+                     </tr>
+                     <tr>
+                          <td>half</td>
+                          <td>7</td>
+                          <td>4</td>
+                          <td>3</td>
+                     </tr>
+                     <tr>
+                          <td>ass</td>
+                          <td>9</td>
+                          <td>3</td>
+                          <td>5</td>
+                     </tr>
+                     <tr>
+                          <td>god</td>
+                          <td>8</td>
+                          <td>4</td>
+                          <td>5</td>
+                     </tr>
+                     <tr>
+                          <td>shit</td>
+                          <td>6</td>
+                          <td>3</td>
+                          <td>7</td>
+                     </tr>
+                     <tr>
+                          <td>points</td>
+                          <td>8</td>
+                          <td>5</td>
+                          <td>3</td>
+                     </tr>
+                     <tr>
+                          <td>lets</td>
+                          <td>7</td>
+                          <td>5</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>state</td>
+                          <td>6</td>
+                          <td>5</td>
+                          <td>3</td>
+                     </tr>
+                     <tr>
+                          <td>mesa</td>
+                          <td>5</td>
+                          <td>5</td>
+                          <td>5</td>
+                     </tr>
+                     <tr>
+                          <td>football</td>
+                          <td>8</td>
+                          <td>2</td>
+                          <td>5</td>
+                     </tr>
+                     <tr>
+                          <td>holder</td>
+                          <td>7</td>
+                          <td>2</td>
+                          <td>7</td>
+                     </tr>
+                     <tr>
+                          <td>devils</td>
+                          <td>7</td>
+                          <td>2</td>
+                          <td>6</td>
+                     </tr>
+                     <tr>
+                          <td>damn</td>
+                          <td>9</td>
+                          <td>4</td>
+                          <td>3</td>
+                     </tr>
+                     <tr>
+                          <td>bears</td>
+                          <td>6</td>
+                          <td>4</td>
+                          <td>5</td>
+                     </tr>
+                     <tr>
+                          <td>scottsdale</td>
+                          <td>9</td>
+                          <td>1</td>
+                          <td>5</td>
+                     </tr>
+                     <tr>
+                          <td>call</td>
+                          <td>8</td>
+                          <td>4</td>
+                          <td>3</td>
+                     </tr>
+                     <tr>
+                          <td>texans</td>
+                          <td>5</td>
+                          <td>6</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>name</td>
+                          <td>8</td>
+                          <td>1</td>
+                          <td>6</td>
+                     </tr>
+                     <tr>
+                          <td>baby</td>
+                          <td>9</td>
+                          <td>3</td>
+                          <td>3</td>
+                     </tr>
+                     <tr>
+                          <td>join</td>
+                          <td>8</td>
+                          <td>3</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>manager</td>
+                          <td>7</td>
+                          <td>1</td>
+                          <td>7</td>
+                     </tr>
+                     <tr>
+                          <td>grappleatgammage</td>
+                          <td>4</td>
+                          <td>5</td>
+                          <td>6</td>
+                     </tr>
+                     <tr>
+                          <td>wow</td>
+                          <td>8</td>
+                          <td>1</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>veterans</td>
+                          <td>4</td>
+                          <td>6</td>
+                          <td>5</td>
+                     </tr>
+                     <tr>
+                          <td>details</td>
+                          <td>9</td>
+                          <td>3</td>
+                          <td>2</td>
+                     </tr>
+                     <tr>
+                          <td>friends</td>
+                          <td>4</td>
+                          <td>3</td>
+                          <td>7</td>
+                     </tr>
+                     <tr>
+                          <td>thing</td>
+                          <td>5</td>
+                          <td>7</td>
+                          <td>2</td>
+                     </tr>
+                     <tr>
+                          <td>president</td>
+                          <td>6</td>
+                          <td>4</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>potus</td>
+                          <td>5</td>
+                          <td>4</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>catch</td>
+                          <td>9</td>
+                          <td>5</td>
+                          <td>0</td>
+                     </tr>
+                     <tr>
+                          <td>kids</td>
+                          <td>6</td>
+                          <td>1</td>
+                          <td>7</td>
+                     </tr>
+                     <tr>
+                          <td>lead</td>
+                          <td>8</td>
+                          <td>3</td>
+                          <td>3</td>
+                     </tr>
+                     <tr>
+                          <td>sun</td>
+                          <td>5</td>
+                          <td>3</td>
+                          <td>6</td>
+                     </tr>
+                     <tr>
+                          <td>sales</td>
+                          <td>3</td>
+                          <td>6</td>
+                          <td>5</td>
+                     </tr>
+                     <tr>
+                          <td>view</td>
+                          <td>5</td>
+                          <td>5</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>event</td>
+                          <td>3</td>
+                          <td>5</td>
+                          <td>5</td>
+                     </tr>
+                     <tr>
+                          <td>career</td>
+                          <td>7</td>
+                          <td>1</td>
+                          <td>5</td>
+                     </tr>
+                     <tr>
+                          <td>gon</td>
+                          <td>7</td>
+                          <td>2</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>music</td>
+                          <td>7</td>
+                          <td>4</td>
+                          <td>2</td>
+                     </tr>
+                     <tr>
+                          <td>girl</td>
+                          <td>7</td>
+                          <td>1</td>
+                          <td>5</td>
+                     </tr>
+                     <tr>
+                          <td>check</td>
+                          <td>6</td>
+                          <td>3</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>packers</td>
+                          <td>5</td>
+                          <td>4</td>
+                          <td>3</td>
+                     </tr>
+                     <tr>
+                          <td>guys</td>
+                          <td>8</td>
+                          <td>4</td>
+                          <td>1</td>
+                     </tr>
+                     <tr>
+                          <td>point</td>
+                          <td>5</td>
+                          <td>4</td>
+                          <td>3</td>
+                     </tr>
+                     <tr>
+                          <td>yall</td>
+                          <td>5</td>
+                          <td>3</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>house</td>
+                          <td>4</td>
+                          <td>5</td>
+                          <td>3</td>
+                     </tr>
+                     <tr>
+                          <td>m_weber16</td>
+                          <td>5</td>
+                          <td>3</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>juliebaker121</td>
+                          <td>5</td>
+                          <td>3</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>chrisrbarron</td>
+                          <td>5</td>
+                          <td>3</td>
+                          <td>4</td>
+                     </tr>
+                     <tr>
+                          <td>win</td>
+                          <td>8</td>
+                          <td>2</td>
+                          <td>2</td>
+                     </tr>
+                     <tr>
+                          <td>yesterday</td>
+                          <td>5</td>
+                          <td>6</td>
+                          <td>1</td>
+                     </tr>
+                </table>
+                </div>
+                </section>
+            </body>
+        </html>
